@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:wght@500;600");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+:root{
+    --moderate-violet: #7541c8;
+    --very-dark-grayish-blue: #48556a;
+    --very-dark-blackish-blue: #19212e;
+    --white: #ffffff;
+    --light-gray: #cfcfcf;
+    --light-grayish-blue: #ecf2f8;
+}
+
+body{
+    font-family: "Barlow Semi Condensed", Barlow, sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-container{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(74px,auto);
+    width: 61vw;
+    margin-top: 164px;
+}
+
+.item1{
+    background-color: var(--moderate-violet);
+    border-radius: 8px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--white);
+}
+
+.item2{
+    background-color: var(--very-dark-grayish-blue);
+    border-radius: 8px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--white);
+}
+
+.item3{
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    grid-column: 1 / 2;
+    grid-row: 4 / 7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--very-dark-grayish-blue);
+}
+
+.item4{
+    background-color: var(--very-dark-blackish-blue);
+    border-radius: 8px;
+    grid-column: 2 / 4;
+    grid-row: 4 / 7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--white);
+}
+
+.item5{
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    grid-column: 4;
+    grid-row: 1 / 7;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--very-dark-grayish-blue);
+}
+
+.card-top{
+    grid-column: 1 / 4; 
+    grid-row: 1 / 2;
+    margin: 26px 16px 18px 32px;
+    display: table;
+    z-index: 1;
+}
+
+.pic{
+    background: url(/images/image-daniel.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #A775F1;
+    position: absolute;
+}
+
+.name{
+    position: absolute;
+    margin-left: 40px;
+}
+
+.under-name{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 16px;
+    opacity: 50%;
+    font-size: 11px;
+    line-height: 11px;
+}
+
+.quotes{
+    background: url(/images/bg-pattern-quotation.svg);
+    width: 104px;
+    height: 102px;
+    position: absolute;
+    margin-left: 324px;
+    margin-top: -26px;
+    opacity: 70%;
+    z-index: -1;
+}
+
+.card-first-text{
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    margin: 16px 32px 16px 32px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    z-index: 1;
+}
+
+.card-second-text{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    margin: 0px 32px 16px 32px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+}
